@@ -1,5 +1,8 @@
+@use "./styles/theme.scss";
+
 .App {
   text-align: center;
+  background-color: theme.$main-background;
 }
 
 .App-logo {

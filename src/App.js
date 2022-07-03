@@ -1,58 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
-import { RegisterForm } from "./features/registration/RegisterForm";
+import './App.scss';
+import MainHeader from "./features/header/MainHeader";
+import RegisterBtn from "./features/components/RegisterBtn.js";
+import SpeakerCard from "./features/speakers/SpeakerCard";
+import MainFooter from "./features/footer/MainFooter";
 
 function App() {
   return (
     <div className="App">
-      <RegisterForm />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+      <MainHeader />
+      <section>
+        <h1>Форум Microsoft</h1>
+        <h1>«Finance industry trust in AI and IT-Security»</h1>
+        <p>Масштабная кибератака и устаревшее оборудование может привести к потере клиентов, ухудшить отношения с партнёрами и учредителями, а невыполнение требований законодательства может привести к существенным штрафам и даже к блокировке ресурсов</p>
+        <p>Узнайте как этого избежать, регистрируйтесь на наш форум</p>
+        <RegisterBtn />
+      </section>
+      <section>
+        <SpeakerCard />
+        <SpeakerCard />
+        <SpeakerCard />
+      </section>
+      <MainFooter />
     </div>
   );
 }

@@ -1,0 +1,11 @@
+.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+.uppercase {
+    text-transform: uppercase;
+}
