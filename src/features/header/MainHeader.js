@@ -7,13 +7,15 @@ import Navbar from "../components/Navbar";
 function MainHeader() {
 	return (
 		<header className={style.main_header}>
-			<Logo />
-            <Navbar className="horizontal uppercase">
-				<span>О мероприятии</span>
-				<span>Спикеры</span>
-			</Navbar>
-            <RegisterBtn />
-			<RegisterForm />
+			<div className="container">
+				<Logo />
+				<Navbar className="horizontal uppercase">
+					<span>О мероприятии</span>
+					<span>Спикеры</span>
+				</Navbar>
+				<RegisterBtn />
+				<RegisterForm />
+			</div>
 		</header>
 	);
 }
