@@ -1,9 +1,11 @@
-function SpeakerCard() {
+import styles from "./SpeakerCard.module.scss";
+
+function SpeakerCard(props) {
     return (
-        <article>
-            <img alt="speaker" />
-            <h3>Speaker name</h3>
-            <p>About speaker text</p>
+        <article className={styles.card}>
+            <img alt="speaker" src={props.photo} />
+            <h3>{props.name}</h3>
+            <p>{props.description}</p>
             <a href="/">Подробнее</a>
         </article>
     );

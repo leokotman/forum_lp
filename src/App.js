@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import MainHeader from "./features/header/MainHeader";
 import RegisterBtn from "./features/components/RegisterBtn.js";
-import SpeakerCard from "./features/speakers/SpeakerCard";
 import MainFooter from "./features/footer/MainFooter";
 
 import vkImg from "./images/icons/1.svg";
 import facebookImg from "./images/icons/2.svg";
 import instaImg from "./images/icons/3.svg";
 import telegramImg from "./images/icons/4.png";
+import axios from "axios";
+import Speakers from "./features/speakers/Speakers";
 
 function App() {
 	const socialLinks = [
@@ -33,11 +34,32 @@ function App() {
 			url: "https://www.telegram.org",
 		},
 	];
+	const [speakers, setSpeakers] = useState([]);
+	const url = "https://pro.alphadevteam.com/api/tz/speakers";
+
+	useEffect(() => {
+		getAllSpeakers();
+	}, []);
+
+	const getAllSpeakers = async () => {
+		await axios.get(url, {
+			headers: {
+				'Access-Control-Allow-Origin': '*',
+				'Content-Type': 'application/json',
+			},
+		})
+		.then((res) => {
+			const allSpeakers = res.data.response;
+			setSpeakers(allSpeakers);
+			console.log(allSpeakers);
+		})
+		.catch(err => console.log(err));
+	}
 
 	return (
 		<div className="App">
 			<MainHeader />
-			<section>
+			<section className="main_info">
 				<div className="container">
 					<h1>Форум Microsoft</h1>
 					<h1>«Finance industry trust in AI and IT-Security»</h1>
@@ -49,13 +71,7 @@ function App() {
 					<RegisterBtn />
 				</div>
 			</section>
-			<section>
-				<div className="container">
-					<SpeakerCard />
-					<SpeakerCard />
-					<SpeakerCard />
-				</div>
-			</section>
+			<Speakers speakers={speakers}/>
 			<MainFooter socialLinks={socialLinks} />
 		</div>
 	);
