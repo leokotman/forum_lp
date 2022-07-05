@@ -3,8 +3,20 @@
 .App {
   text-align: left;
   background-color: theme.$main-background;
-  font-family: "JetBrains Mono", monospace;
+  font-family: theme.$main-text;
+  color: #C2BCD2;
+  background-blend-mode: overlay;
+  background: linear-gradient(173.57deg, #00092e 53.34%, #03001f 69.51%, #110520 81.76%);
+  background-position: -50% 0;
+// background: linear-gradient(173.57deg, #00092E 53.34%, #03001F 69.51%, #110520 81.76%);
+// filter: blur(244px);
+// background: radial-gradient(50% 50% at 50% 50%, rgba(119, 1, 77, 0.5) 3.59%, rgba(92, 14, 191, 0.5) 100%);
+// opacity: 0.5;
+// filter: blur(420px);
+// border-radius: 4000px;
+// transform: rotate(-120deg);
 }
+
 
 .container {
   width: 73%;
@@ -12,8 +24,20 @@
 }
 
 .main_info {
-  background-image: url("./assets/images/photos/main_info_bg.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 900px;
+  //IE
+  background: url("./assets/images/photos/main_info_bg.png");
+  background-color: rgba(6, 6, 6, 0.4);
+
+  background: url("./assets/images/photos/main_info_bg.png"), linear-gradient(0deg, rgba(6, 6, 6, 0.4), rgba(6, 6, 6, 0.4));
+  background-blend-mode: overlay;
+  // background-image: url("./assets/images/photos/main_info_bg.png");
+  background-size: auto;
+  // background-color: linear-gradient(0deg, rgba(6, 6, 6, 0.4));
+  background-position: center bottom, 0 0;
+  
+  background-repeat: no-repeat;
+  min-height: 1200px;
+}
+h1 {
+  margin: 0;
 }
