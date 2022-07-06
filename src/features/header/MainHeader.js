@@ -4,27 +4,23 @@ import RegisterBtn from "../components/RegisterBtn";
 import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
 import { useState } from "react";
+import Modal from "./Modal";
 
 function MainHeader() {
 	const [registryOpen, setRegistryOpen] = useState(false);
-
-	const checkRegistryOpen = () => {
-		if (registryOpen) {
-			return <RegisterForm />;
-		} else {
-			return <RegisterBtn openRegistry={setRegistryOpen} />;
-		}
-	};
 
 	return (
 		<header id="main_header">
 			<div className={styles.container + " container horizontal"}>
 				<Logo />
 				<Navbar className="horizontal uppercase gapM">
-					<span className="nav_link">О мероприятии</span>
-					<span className="nav_link">Спикеры</span>
+					<a href="#forum_heading"><span className="nav_link">О мероприятии</span></a>
+					<a href="#speakers"><span className="nav_link">Спикеры</span></a>
 				</Navbar>
-				{checkRegistryOpen()}
+				<RegisterBtn openRegistry={setRegistryOpen} />
+				<Modal show={registryOpen} handleClose={() => setRegistryOpen(false)}>
+					<RegisterForm />
+				</Modal>
 			</div>
 		</header>
 	);

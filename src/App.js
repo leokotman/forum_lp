@@ -60,7 +60,7 @@ function App() {
 			<section className="main_info" id="main_info">
 				<MainHeader />
 				<div className="container vertical">
-					<h1>Форум Microsoft</h1>
+					<h1 id="forum_heading">Форум Microsoft</h1>
 					<h1>«Finance industry trust in AI and IT&#8209;Security»</h1>
 					<p className="main_info_p">
 						Масштабная кибератака и устаревшее оборудование может привести к потере клиентов, ухудшить отношения с партнёрами и учредителями, а невыполнение требований законодательства

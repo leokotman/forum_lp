@@ -1,10 +1,14 @@
 header {
 	background: radial-gradient(76.43% 110.35% at 15.78% 19.68%, #190022 43.22%, #060606 78.37%);
 	min-height: 300px;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
 }
 
 .container {
-	//IE
 	padding: 8% 0;
 
 	padding: clamp(40px, 8%, 120px) 0;

@@ -1,3 +1,11 @@
 form {
-    background-color: lightblue;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+    
+	input {
+		width: 100%;
+		line-height: 2rem;
+		font-family: monospace;
+	}
 }
