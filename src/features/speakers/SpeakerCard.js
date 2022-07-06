@@ -6,7 +6,7 @@ function SpeakerCard(props) {
             <img alt="speaker" src={props.photo} />
             <h3>{props.name}</h3>
             <p>{props.description}</p>
-            <a href="/">Подробнее</a>
+            <a href="#main_info">Подробнее</a>
         </article>
     );
 };

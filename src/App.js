@@ -4,10 +4,10 @@ import MainHeader from "./features/header/MainHeader";
 import RegisterBtn from "./features/components/RegisterBtn.js";
 import MainFooter from "./features/footer/MainFooter";
 
-import vkImg from "./images/icons/1.svg";
-import facebookImg from "./images/icons/2.svg";
-import instaImg from "./images/icons/3.svg";
-import telegramImg from "./images/icons/4.png";
+import vkImg from "./assets/images/icons/1.svg";
+import facebookImg from "./assets/images/icons/2.svg";
+import instaImg from "./assets/images/icons/3.svg";
+import telegramImg from "./assets/images/icons/4.png";
 import axios from "axios";
 import Speakers from "./features/speakers/Speakers";
 
@@ -51,23 +51,22 @@ function App() {
 		.then((res) => {
 			const allSpeakers = res.data.response;
 			setSpeakers(allSpeakers);
-			console.log(allSpeakers);
 		})
 		.catch(err => console.log(err));
 	}
 
 	return (
 		<div className="App">
-			<MainHeader />
-			<section className="main_info">
-				<div className="container">
+			<section className="main_info" id="main_info">
+				<MainHeader />
+				<div className="container vertical">
 					<h1>Форум Microsoft</h1>
-					<h1>«Finance industry trust in AI and IT-Security»</h1>
-					<p>
+					<h1>«Finance industry trust in AI and IT&#8209;Security»</h1>
+					<p className="main_info_p">
 						Масштабная кибератака и устаревшее оборудование может привести к потере клиентов, ухудшить отношения с партнёрами и учредителями, а невыполнение требований законодательства
 						может привести к существенным штрафам и даже к блокировке ресурсов
 					</p>
-					<p>Узнайте как этого избежать, регистрируйтесь на наш форум</p>
+					<p className="main_info_small_p">Узнайте как этого избежать, регистрируйтесь на наш форум</p>
 					<RegisterBtn />
 				</div>
 			</section>

@@ -1,5 +1,10 @@
 header {
-	background: radial-gradient(76.43% 110.35% at 15.78% 19.68%, #190022 43.22%, #060606 78.37%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-	// filter: blur(244px);
+	background: radial-gradient(76.43% 110.35% at 15.78% 19.68%, #190022 43.22%, #060606 78.37%);
 	min-height: 300px;
+}
+.container {
+	//IE
+	padding: 8% 0;
+
+	padding: clamp(40px, 8%, 120px) 0;
 }

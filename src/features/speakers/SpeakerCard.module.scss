@@ -1,4 +1,23 @@
 .card {
     border: 1px solid #fff;
     width: 330px;
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 300;
+        border-bottom: 3px solid #534878;
+        padding-bottom: 0.625rem;
+        width: 73.6%;
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 200;
+        margin-bottom: 1rem;
+    }
+    a {
+        font-weight: 200;
+        text-decoration: underline;
+        color: #fff;
+        opacity: 0.5;
+    }
 }

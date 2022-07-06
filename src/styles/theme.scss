@@ -1,2 +1,22 @@
-$main-background: rgb(215, 203, 236);
-$main-text: Arial;
+$main-background:  #060606;
+$main-text: "JetBrains Mono", monospace;
+
+.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.gapM {
+    gap: 2.5rem;
+}
+.gapS {
+    gap: 1.875rem
+}

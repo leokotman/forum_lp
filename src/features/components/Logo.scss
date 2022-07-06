@@ -1,9 +1,16 @@
+.logo {
+    display: flex;
+}
 h2, h5 {
     font-family: "IBM Plex Mono";
+    font-weight: normal;
+    margin: 0;
 }
 h2 {
     font-size: 1.625rem;
+    line-height: 2.125rem;
 }
 h5 {
     font-size: 1rem;
+    line-height: 1.4rem;
 }

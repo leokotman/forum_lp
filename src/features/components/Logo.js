@@ -3,7 +3,7 @@ import logo from "../../assets/images/icons/logo.png";
 
 function Logo() {
 	return (
-		<div>
+		<div className="logo">
 			<a href="/">
 				<img src={logo} alt="main logo" />
 			</a>
