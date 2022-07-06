@@ -1,31 +1,35 @@
 import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
 import SocialMedia from "../components/SocialMedia";
-import "./MainFooter.module.scss";
+import styles from "./MainFooter.module.scss";
 
 function MainFooter(props) {
 	return (
-		<footer id="main_footer">
-			<div className="container horizontal">
+		<footer id="main_footer" className={styles.footer}>
+			<div className={styles.gradient}>
+				<div className='container horizontal'>
 				<Logo />
 				<Navbar className="vertical gapS">
-					<span>Политика конфиденциальности</span>
-					<span>Публичная оферта</span>
-					<span>Телефон</span>
+					<span className="nav_link">Политика конфиденциальности</span>
+					<span className="nav_link">Публичная оферта</span>
+					<span className="nav_link">+7 912 123-45-67</span>
+					<span className="nav_link">about@microsoftforum.com</span>
 				</Navbar>
 				<Navbar className="vertical uppercase gapS">
-					<span>О мероприятии</span>
-					<span>Темы</span>
-					<span>Расписание</span>
-					<span>Спикеры</span>
-					<span>Контакты</span>
+					<span className="nav_link">О мероприятии</span>
+					<span className="nav_link">Темы</span>
+					<span className="nav_link">Расписание</span>
+					<span className="nav_link">Спикеры</span>
+					<span className="nav_link">Контакты</span>
 				</Navbar>
-				<Navbar className="horizontal">
+				<Navbar className={styles.links + " horizontal"}>
 					{props.socialLinks.map((link, i) => {
 						return <SocialMedia link={link} key={i} />;
 					})}
 				</Navbar>
 			</div>
+			</div>
+			
 		</footer>
 	);
 }

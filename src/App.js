@@ -72,6 +72,7 @@ function App() {
 			</section>
 			<Speakers speakers={speakers}/>
 			<MainFooter socialLinks={socialLinks} />
+			<div className="gradient"></div>
 		</div>
 	);
 }

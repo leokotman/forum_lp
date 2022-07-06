@@ -2,9 +2,8 @@ import SpeakerCard from "./SpeakerCard.js";
 import styles from "./Speakers.module.scss";
 
 function Speakers(props) {
-    console.log('speakers in Speakers layout get', props.speakers);
 	return (
-		<section className={styles.layout + ' container'}>
+		<section id="speakers" className={styles.layout + ' container'}>
             <h2>Спикеры нашего форума</h2>
 			{props.speakers.map((speaker, i) => {
 				return (

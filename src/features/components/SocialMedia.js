@@ -1,8 +1,9 @@
+import styles from "./SocialMedia.module.scss";
+
 function SocialMedia(props) {
-    console.log(props);
     return (
-        <a href={props.link.url}>
-            <img src={props.link.src} alt={props.link.name}/>
+        <a href={props.link.url} className={styles.a}>
+            <img src={props.link.src} alt={props.link.name} />
         </a>
     );
 };

@@ -17,5 +17,5 @@ export const registerSlice = createSlice({
 });
 
 export const {submitForm} = registerSlice.actions;
-export const selectForm = (state) => state.register;
+// export const selectForm = (state) => state.register;
 export default registerSlice.reducer;

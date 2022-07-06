@@ -1,20 +1,30 @@
-import style from "./MainHeader.module.scss";
+import styles from "./MainHeader.module.scss";
 import { RegisterForm } from "../registration/RegisterForm.js";
 import RegisterBtn from "../components/RegisterBtn";
 import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
+import { useState } from "react";
 
 function MainHeader() {
+	const [registryOpen, setRegistryOpen] = useState(false);
+
+	const checkRegistryOpen = () => {
+		if (registryOpen) {
+			return <RegisterForm />;
+		} else {
+			return <RegisterBtn openRegistry={setRegistryOpen} />;
+		}
+	};
+
 	return (
-		<header className={style.main_header}>
-			<div className="container">
+		<header id="main_header">
+			<div className={styles.container + " container horizontal"}>
 				<Logo />
-				<Navbar className="horizontal uppercase">
-					<span>О мероприятии</span>
-					<span>Спикеры</span>
+				<Navbar className="horizontal uppercase gapM">
+					<span className="nav_link">О мероприятии</span>
+					<span className="nav_link">Спикеры</span>
 				</Navbar>
-				<RegisterBtn />
-				<RegisterForm />
+				{checkRegistryOpen()}
 			</div>
 		</header>
 	);
