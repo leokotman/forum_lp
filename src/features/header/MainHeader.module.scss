@@ -13,3 +13,15 @@ header {
 
 	padding: clamp(40px, 8%, 120px) 0;
 }
+
+@media screen and (max-width: 900px) {
+    .container {
+		gap: 2rem;
+	}
+}
+@media screen and (max-width: 667px) {
+	.container {
+		flex-direction: column;
+		align-items: start;
+	}
+ }

@@ -5,11 +5,11 @@ function Logo() {
 	return (
 		<div className={styles.logo}>
 			<a href="/">
-				<img src={logo} alt="main logo" />
+				<img src={logo} alt="main logo" width="48"/>
 			</a>
 			<div>
-				<h2 className={styles.h2}>Security</h2>
-				<h5 className={styles.h5}>Forum</h5>
+				<span className={styles.span_l}>Security</span>
+				<span className={styles.span_sm}>Forum</span>
 			</div>
 		</div>
 	);

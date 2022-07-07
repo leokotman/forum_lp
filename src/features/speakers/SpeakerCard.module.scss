@@ -1,5 +1,9 @@
 .card {
-    width: 330px;
+    max-width: 330px;
+
+    .photo {
+        max-width: 100%;
+    }
 
     h3 {
         font-size: 1.25rem;
@@ -21,5 +25,17 @@
     }
     a:hover {
         opacity: .8;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        max-width: 45%;
+        min-width: 226px;
+    }
+}
+@media screen and (max-width: 667px) {
+    .card {
+        max-width: 80%;
     }
 }

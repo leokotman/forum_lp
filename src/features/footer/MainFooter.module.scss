@@ -47,21 +47,30 @@ $gradient_border: 50px;
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	.footer {
+		.footer_content {
+			padding-top: 20%;
+			padding-bottom: 5%;
+			gap: 2rem;
+		}
+	}
+}
+
 @media screen and (min-width: 1441px) {
 	.footer {
 		max-height: 30vw;
 
 		.footer_content {
-			padding-top: 10%;
+			padding-top: 15%;
 		}
 	}
 }
-@media screen and (max-width: 1200px) {
+
+@media screen and (min-width: 1920px) {
 	.footer {
 		.footer_content {
-			padding-top: 15%;
-			padding-bottom: 5%;
-			gap: 2rem;
+			padding-top: 10%;
 		}
 	}
 }

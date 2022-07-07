@@ -38,6 +38,11 @@
 		button.registration {
 			margin-top: clamp(50px, 10.4vw, 200px);
 		}
+		.modal-main {
+			button.registration {
+				margin-top: 0;
+			}
+		}
 	}
 }
 
@@ -90,12 +95,18 @@ a, .nav_link,
 }
 
 // Responsive
-
-@media screen and (min-width: 1441px) {
-	.container {
-		width: 65%;
+@media screen and (max-width: 900px) {
+    h1 {
+		font-size: 2.75rem;
 	}
 }
+
+@media screen and (max-width: 1200px) {
+	h1 {
+		font-size: 3rem;
+	}
+}
+
 @media screen and (min-width: 1920px) {
 	.container {
 		width: 60%;

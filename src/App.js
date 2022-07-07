@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./App.scss";
 import MainHeader from "./features/header/MainHeader";
 import RegisterBtn from "./features/components/RegisterBtn.js";
-import MainFooter from "./features/footer/MainFooter";
+import MainFooter from "./features/footer/MainFooter.js";
+import Modal from "./features/header/Modal";
+import { RegisterForm } from "./features/registration/RegisterForm";
 
 import vkImg from "./assets/images/icons/1.svg";
 import facebookImg from "./assets/images/icons/2.svg";
@@ -36,6 +38,7 @@ function App() {
 	];
 	const [speakers, setSpeakers] = useState([]);
 	const url = "https://pro.alphadevteam.com/api/tz/speakers";
+	const [registryOpen, setRegistryOpen] = useState(false);
 
 	useEffect(() => {
 		getAllSpeakers();
@@ -67,7 +70,10 @@ function App() {
 						может привести к существенным штрафам и даже к блокировке ресурсов
 					</p>
 					<p className="main_info_small_p">Узнайте как этого избежать, регистрируйтесь на наш форум</p>
-					<RegisterBtn />
+					<RegisterBtn openRegistry={setRegistryOpen} />
+				<Modal show={registryOpen} handleClose={() => setRegistryOpen(false)}>
+					<RegisterForm />
+				</Modal>
 				</div>
 			</section>
 			<Speakers speakers={speakers}/>

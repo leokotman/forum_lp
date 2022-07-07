@@ -1,9 +1,9 @@
+import { useState } from "react";
 import styles from "./MainHeader.module.scss";
 import { RegisterForm } from "../registration/RegisterForm.js";
 import RegisterBtn from "../components/RegisterBtn";
 import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
-import { useState } from "react";
 import Modal from "./Modal";
 
 function MainHeader() {
