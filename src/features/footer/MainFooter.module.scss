@@ -1,11 +1,14 @@
+$gradient_border: 50px;
+
 .footer {
-	height: 50vw;
+	min-height: 500px;
+	max-height: 50vw;
 	background-blend-mode: overlay;
 
 	.gradient {
 		z-index: 0;
 		background: radial-gradient(ellipse, rgba(99, 19, 200, 0.2) 33.06%, rgba(6, 6, 6, 0.2) 86.26%);
-		border: 50px solid transparent;
+		border: $gradient_border solid transparent;
 		border-radius: 30px;
 		box-sizing: border-box;
 		background-position: center;
@@ -16,17 +19,39 @@
 		position: relative;
 
 		&:before {
-			content: '';
+			content: "";
 			position: absolute;
-			top: 0; right: 0; bottom: 0; left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
 			z-index: -1;
 			margin: -50px;
 			border-radius: inherit;
-			background: linear-gradient(0deg, rgba(99,19,200,0.2) 50%, rgba(6,6,6,0.2) 100%);
+			background: linear-gradient(0deg, rgba(99, 19, 200, 0.1) 50%, rgba(6, 6, 6, 0.2) 100%);
+		}
+		.footer_content {
+			align-items: flex-start;
+			margin-top: 25%;
+			margin-bottom: 2%;
+			box-sizing: border-box;
 		}
 	}
 
 	.links {
 		gap: 12px;
+	}
+}
+
+@media screen and (min-width: 1441px) {
+	.footer {
+		max-height: 30vw;
+
+		.gradient {
+			.footer_content {
+				margin-top: 10%;
+				width: calc(65% + $gradient_border*2);
+			}
+		}
 	}
 }

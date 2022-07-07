@@ -7,7 +7,7 @@ function MainFooter(props) {
 	return (
 		<footer id="main_footer" className={styles.footer}>
 			<div className={styles.gradient}>
-				<div className="container horizontal">
+				<div className={styles.footer_content + " container horizontal gapS"}>
 					<Logo />
 					<Navbar className="vertical gapS">
 						<span className="nav_link">Политика конфиденциальности</span>
