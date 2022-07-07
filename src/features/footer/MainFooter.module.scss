@@ -4,8 +4,10 @@ $gradient_border: 50px;
 	min-height: 500px;
 	max-height: 50vw;
 	background-blend-mode: overlay;
+	position: relative;
 
 	.gradient {
+		position: absolute;
 		z-index: 0;
 		background: radial-gradient(ellipse, rgba(99, 19, 200, 0.2) 33.06%, rgba(6, 6, 6, 0.2) 86.26%);
 		border: $gradient_border solid transparent;
@@ -16,7 +18,7 @@ $gradient_border: 50px;
 		background-repeat: no-repeat;
 		height: 100%;
 		width: 100%;
-		position: relative;
+		// position: relative;
 
 		&:before {
 			content: "";
@@ -29,13 +31,15 @@ $gradient_border: 50px;
 			margin: -50px;
 			border-radius: inherit;
 			background: linear-gradient(0deg, rgba(99, 19, 200, 0.1) 50%, rgba(6, 6, 6, 0.2) 100%);
-		}
-		.footer_content {
-			align-items: flex-start;
-			margin-top: 25%;
-			margin-bottom: 2%;
-			box-sizing: border-box;
-		}
+		}	
+	}
+	.footer_content {
+		align-items: flex-start;
+		padding-top: 25%;
+		padding-bottom: 2%;
+		box-sizing: border-box;
+		position: inherit;
+		z-index: 2;
 	}
 
 	.links {
@@ -47,11 +51,17 @@ $gradient_border: 50px;
 	.footer {
 		max-height: 30vw;
 
-		.gradient {
-			.footer_content {
-				margin-top: 10%;
-				width: calc(65% + $gradient_border*2);
-			}
+		.footer_content {
+			padding-top: 10%;
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	.footer {
+		.footer_content {
+			padding-top: 15%;
+			padding-bottom: 5%;
+			gap: 2rem;
 		}
 	}
 }
