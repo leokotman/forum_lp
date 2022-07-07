@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/forum_lp/static/css/main.75b66ee3.css",
+    "main.js": "/forum_lp/static/js/main.810deab9.js",
+    "static/js/787.d0a61430.chunk.js": "/forum_lp/static/js/787.d0a61430.chunk.js",
+    "static/media/main_info_bg.png": "/forum_lp/static/media/main_info_bg.c327b97af11d4ea5955a.png",
+    "static/media/JetBrainsMono-Medium.eot": "/forum_lp/static/media/JetBrainsMono-Medium.a0e77be1683e86f7ac5c.eot",
+    "static/media/JetBrainsMono-Regular.eot": "/forum_lp/static/media/JetBrainsMono-Regular.0b7e43538be29cbafbff.eot",
+    "static/media/JetBrainsMono-Light.eot": "/forum_lp/static/media/JetBrainsMono-Light.cbfc8a6d5826d829b4e3.eot",
+    "static/media/JetBrainsMono-Thin.eot": "/forum_lp/static/media/JetBrainsMono-Thin.4b4b3491eaff2096dd28.eot",
+    "static/media/JetBrainsMono-Light.woff": "/forum_lp/static/media/JetBrainsMono-Light.d27fcbd4813764c3b395.woff",
+    "static/media/JetBrainsMono-Medium.woff": "/forum_lp/static/media/JetBrainsMono-Medium.4c5efeed8b3f33b50f23.woff",
+    "static/media/JetBrainsMono-Thin.woff": "/forum_lp/static/media/JetBrainsMono-Thin.6e461d29deec7740dad5.woff",
+    "static/media/JetBrainsMono-Regular.woff": "/forum_lp/static/media/JetBrainsMono-Regular.7b6954020ef8e4128174.woff",
+    "static/media/IBMPlexMono-Regular.eot": "/forum_lp/static/media/IBMPlexMono-Regular.0fb96b7750e030eedd3d.eot",
+    "static/media/JetBrainsMono-Light.woff2": "/forum_lp/static/media/JetBrainsMono-Light.91a815f23b8818b0a197.woff2",
+    "static/media/JetBrainsMono-Medium.woff2": "/forum_lp/static/media/JetBrainsMono-Medium.91f7becb25aebf926af3.woff2",
+    "static/media/JetBrainsMono-Thin.woff2": "/forum_lp/static/media/JetBrainsMono-Thin.df2b17437f55a5971699.woff2",
+    "static/media/JetBrainsMono-Regular.woff2": "/forum_lp/static/media/JetBrainsMono-Regular.c49470ac578960e78187.woff2",
+    "static/media/IBMPlexMono-Regular.woff": "/forum_lp/static/media/IBMPlexMono-Regular.9ca6ae17104bab77e74c.woff",
+    "static/media/IBMPlexMono-Regular.woff2": "/forum_lp/static/media/IBMPlexMono-Regular.93716bb39b13a56b8e7f.woff2",
+    "static/media/3.svg": "/forum_lp/static/media/3.a983bc3f76c0bd777f8a81e9ea4995e2.svg",
+    "static/media/1.svg": "/forum_lp/static/media/1.3574acb5375801b500ab24a463ce98c4.svg",
+    "index.html": "/forum_lp/index.html",
+    "static/media/2.svg": "/forum_lp/static/media/2.6f9593a12a1072aa431aab240a419063.svg",
+    "main.75b66ee3.css.map": "/forum_lp/static/css/main.75b66ee3.css.map",
+    "main.810deab9.js.map": "/forum_lp/static/js/main.810deab9.js.map",
+    "787.d0a61430.chunk.js.map": "/forum_lp/static/js/787.d0a61430.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75b66ee3.css",
+    "static/js/main.810deab9.js"
+  ]
+}
