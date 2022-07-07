@@ -22,6 +22,7 @@ export function RegisterForm() {
 	const register = () => {
 		dispatch(submitForm(formData));
 		setFormSubmitted(true);
+		console.log(`Registration email: ${formData.email}, name: ${formData.name}.`, formData);
 	};
 
 	return (
